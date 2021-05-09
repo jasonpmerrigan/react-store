@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { FaCheck } from 'react-icons/fa';
 import { useCartContext } from '../context/cart_context';
 import AmountButtons from './AmountButtons';
-// fuck this git
 
 const AddToCart = () => {
   return <h4>addToCart </h4>;
