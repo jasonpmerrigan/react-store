@@ -1,11 +1,34 @@
-import React from 'react'
-import styled from 'styled-components'
-import { PageHero } from '../components'
-import aboutImg from '../assets/hero-bcg.jpeg'
+import React from 'react';
+import styled from 'styled-components';
+import { PageHero } from '../components';
+import aboutImg from '../assets/hero-bcg.jpeg';
 
 const AboutPage = () => {
-  return <h4>about page</h4>
-}
+  return (
+    <main>
+      <PageHero title='about' />
+      <Wrapper className='page section section-center'>
+        <img src={aboutImg} alt='nice desk' />
+        <article>
+          <div className='title'>
+            <h2>our story</h2>
+            <div className='underline'></div>
+          </div>
+          <p>
+            If you like IKEA, you will love IKEA Family. In our club no idea is
+            too big or too small. We appreciate that sometimes you need a little
+            helping hand to go from being a dreamer to a doer. But that’s what
+            family is for. Together we will bring your ideas to life. Our club
+            is not like most loyalty clubs where members are rewarded only on
+            how much they spend. We try to be different. Our goal is to reach,
+            inspire and reward the many people. The people with small wallets
+            but big dreams.
+          </p>
+        </article>
+      </Wrapper>
+    </main>
+  );
+};
 
 const Wrapper = styled.section`
   display: grid;
@@ -33,5 +56,5 @@ const Wrapper = styled.section`
   @media (min-width: 992px) {
     grid-template-columns: 1fr 1fr;
   }
-`
-export default AboutPage
+`;
+export default AboutPage;

@@ -1,9 +1,30 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 const Contact = () => {
-  return <h4>contact section</h4>
-}
+  return (
+    <Wrapper>
+      <div className='section-center'>
+        <h3>Join our Newsletter for 20% off</h3>
+        <div className='content'>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            debitis nesciunt alias error? Natus incidunt voluptatum nisi,
+            molestiae et minima!
+          </p>
+          <form className='contact-form'>
+            <input
+              type='email'
+              className='form-input'
+              placeholder='johnappleseed@gmail.com'
+            />
+            <button className='submit-btn'>subscribe </button>
+          </form>
+        </div>
+      </div>
+    </Wrapper>
+  );
+};
 const Wrapper = styled.section`
   padding: 5rem 0;
   h3 {
@@ -39,7 +60,7 @@ const Wrapper = styled.section`
   }
   .form-input::placeholder {
     color: var(--clr-black);
-    text-transform: capitalize;
+    opacity: 0.5;
   }
   .submit-btn {
     background: var(--clr-primary-5);
@@ -67,6 +88,6 @@ const Wrapper = styled.section`
   @media (min-width: 1280px) {
     padding: 15rem 0;
   }
-`
+`;
 
-export default Contact
+export default Contact;
