@@ -12,10 +12,7 @@ const Hero = () => {
           design your <br />
           comfort zone
         </h1>
-        <p>
-          OK before we start, let's go over the ground-rules … No touching of
-          the hair or face … And THAT'S IT. Now FIGHT!
-        </p>
+        <p>A place to share the good things</p>
         <Link to='/products' className='btn hero-btn'>
           Shop now
         </Link>
